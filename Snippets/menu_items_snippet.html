@@ -1,0 +1,12 @@
+
+<div class="Dish col-lg-4 col-md-6 col-sm-12">
+	<!-- <input type="checkbox" id="btnControl"/> -->
+	<a href="#Ingr" onclick="$dc.loadRecipe(this, '{{Name}}','{{FNjson}}', '{{Week}}'); $dc.loadFlow('{{FNjson}}', '{{Week}}');
+	$dc.getLink(this, '{{Name}}'); return false; ">
+		<div class="menu-item-photo">
+			<div class="idRecipe">{{Id}}</div>
+			<div> {{Name}} <br> {{EnergyValue}}  {{Time}}  {{Weight}}  {{Complexity}}  {{Tags}}</div>
+			<img class="img-responsive" width="694" height="380" src="{{FNjpeg}}" alt="Item">
+		</div>
+	</a>
+</div>

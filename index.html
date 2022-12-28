@@ -1,0 +1,89 @@
+<!doctype html>
+	<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="JS/script1.js"></script>
+    <title>Menu</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="shortcut icon" href="/JPEG/favicon.ico" type="image/x-icon">
+
+	<style>
+	</style>
+  </head>
+  <body>
+  	<header>
+  		<input type="button" value=" Обновить рецепты " onclick="$dc.cookiesUpd()" class="button1">
+  		<h1 id="tytl" alt="123" title="Тут рыбы нет!!!">
+  		Что приготовить
+  		</h1>
+  	</header>
+
+  	<hr class="hr-line">
+
+  	<div class="tagsList">
+<!--  <input type="button" value="Русская кухня" class="button2">
+  		<input type="button" value="Веган" class="button2"> -->
+  	</div>
+  	<div class="mainInput">
+		  <div class="FilterSec col-lg-2 col-md-2 col-sm-12" id="Fltr">		
+		  	<div class="FilterSecHeader">Опции выбора рецептов</div>
+		  	<div class="FilterIn" title="Введите частичное или полное название блюда">Поиск по названию: </div>
+		  	<div class="FilterIn">
+		  			<form	id="searchCont" action="#" method="get" enctype="multipart/form-data">
+		  				<input type="text" name="recipeSearch" value="" class="recipeSearch" placeholder="введите текст..." />
+		  				<button class="mGlass" type="submit">
+		  					<svg class="mGlass">
+		  					<path d="M10.526 3a7.526 7.526 0 017.527 7.526 7.485 7.485 0 01-.7 3.156l3.29 4.429a1.81 1.81 0 01-2.532 2.532l-4.427-3.292a7.488 7.488 0 01-3.158.701 7.526 7.526 0 110-15.052zm0 12.744a5.217 5.217 0 100-10.436 5.218 5.218 0 000 10.436z" fill="#502828"></path>
+		  					</svg>
+		  				</button>
+		  			</form>
+		  	</div>
+		  	<div class="FilterIn" hidden>Country of origin</div>
+		  	<div class="FilterIn" hidden>Cooking time</div>
+		  	<div class="FilterIn"	hidden>Complexity</div>
+		  	<div class="FilterIn" hidden>Key words in dish name</div>
+		  	<div class="FilterIn" hidden>Key words in dish description</div>
+		  	<div class="FilterIn" hidden>Calories range</div>
+		  </div>
+		  <div class = "MenuWhole col-lg-10 col-md-10 col-sm-12">
+		  	<div id="main-content" class="container"></div>
+		  </div>
+		</div>
+
+  	<!-- секция с ингридиентами		   -->
+
+  	 		
+		<div class="RecipeContHeader" id="IngrSection">Ингредиенты</div>
+		
+		<div>
+				<div class = "col-lg-4 col-md-4 col-sm-4" id="Ingredients"></div>
+					
+				<div class="IngrBox col-lg-8 col-md-8 col-sm-8" id="IngrTable"></div>
+		</div>		
+  	
+
+		<!-- секция с рецептом		   -->
+  	
+		<div class="RecipeFlow">Порядок приготовления</div>
+		<div id="Flow"></div>
+
+		<div class="ingr_popups" id = "ingr_popups">
+<!-- 			<div class="popup">
+				<div class="popup_body">
+					<div class="ingr_data">
+						<div class="ingr_data_prop col-lg-4 col-md-4 col-sm-4">Состав</div>
+						<div class="ingr_data_value col-lg-8 col-md-8 col-sm-8">Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя Сливки, молоко и кусочек грязи от производителя</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		
+
+		<script src="JS/ajax-utils.js"></script>
+  	<script src="JS/script1.js"></script>
+  	<!-- <script src="JS/script2.js"></script> -->
+
+  </body>
+</html>
